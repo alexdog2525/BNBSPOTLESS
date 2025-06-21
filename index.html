@@ -8,6 +8,32 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
   <style>
+    @keyframes flicker {
+  0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+    opacity: 1;
+    text-shadow: 0 0 5px #ff3c3c, 0 0 10px #ff3c3c, 0 0 20px #ff3c3c;
+  }
+  20%, 24%, 55% {
+    opacity: 0.6;
+    text-shadow: 0 0 2px #ff3c3c, 0 0 4px #ff3c3c;
+  }
+  }
+
+  .neon-flicker {
+  color: #ff3c3c;
+  font-size: 2.2rem;
+  font-weight: 800;
+  animation: flicker 2s infinite;
+  text-shadow: 0 0 5px #ff3c3c, 0 0 10px #ff3c3c, 0 0 20px #ff3c3c;
+  position: relative;
+  }
+
+  .neon-flicker span.tilt {
+  display: inline-block;
+  transform: rotate(-7deg);
+  color: #fff;
+  text-shadow: 0 0 5px #fff, 0 0 10px #ff3c3c, 0 0 20px #ff3c3c;
+    }
     .gallery img {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
@@ -170,7 +196,7 @@
   </div>
 
  <section class="section neon-bg glass-card">
-  <h2 class="neon-flicker">Why Choose Us?</h2>
+ <h2 class="neon-flicker"><span class="tilt">W</span>hy Choose Us?</h2>
   <p>
     At BnB Spotless, we specialize in Airbnb turnovers and residential deep cleans designed to leave your space spotless and guest-ready. Our experienced team uses pet-safe products and handles everything from detailed dusting and vacuuming to kitchen and bathroom sanitization.
   </p>
