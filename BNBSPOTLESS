@@ -85,7 +85,7 @@
 </head>
 <body>
   <header>
-    <img src="logo.png" alt="BnB Spotless Logo" />
+    <img src="EAC2D567-5912-44F0-A1EA-AAF2E9F79AEE.PNG" alt="BnB Spotless Logo" />
     <h1>BnB Spotless</h1>
     <p>Short-Term Rental Turnovers & Home Cleaning</p>
   </header>
@@ -104,10 +104,9 @@
   <section class="section">
     <h2>Before & After Gallery</h2>
     <div class="gallery">
-      <img src="https://raw.githubusercontent.com/openai/bnb-spotless/main/assets/before-after-kitchen.jpg" alt="Kitchen Before & After">
-      <img src="https://raw.githubusercontent.com/openai/bnb-spotless/main/assets/before-after-bedroom.jpg" alt="Bedroom Before & After">
-      <img src="https://raw.githubusercontent.com/openai/bnb-spotless/main/assets/before-after-livingroom.jpg" alt="Living Room Before & After">
-      <img src="https://raw.githubusercontent.com/openai/bnb-spotless/main/assets/before-after-wholehouse.jpg" alt="Whole House Before & After">
+      <img src="20250621_1627_Airbnb Cleaning Transformation_simple_compose_01jya2p74kedxapak8nz68vr9v.png" alt="Bedroom Before and After">
+      <img src="20250621_1633_Room Transformation_remix_01jya31332fbv9bk5cgk32pepe.png" alt="Living Room Before and After">
+      <img src="EAC2D567-5912-44F0-A1EA-AAF2E9F79AEE.PNG" alt="Kitchen Before and After">
     </div>
   </section>
 
