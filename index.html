@@ -8,27 +8,41 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
   <style>
-      .neon-bg {
+    .neon-bg h2,
+    .neon-bg p {
+      color: #fff;
+      text-shadow:
+      0 0 5px #ff3c3c,
+      0 0 10px #ff3c3c,
+      0 0 20px #ff3c3c,
+      0 0 40px #ff3c3c;
+    }
+    .neon-bg {
       position: relative;
-      background-image: url('bnb-neon-sign.png'); /bnb-neon-sign.png/
-      background-size: cover;
+      background-image: url('bnb-neon-sign.png'); /* make sure file name matches */
+      background-size: contain; /* changed from cover to contain */
       background-repeat: no-repeat;
       background-position: center;
+      max-height: 400px; /* limits stretch */
       padding: 4rem 1.5rem;
       z-index: 1;
+      overflow: hidden;
     }
-      .neon-bg::before {
+     .neon-bg::before {
       content: "";
       position: absolute;
       top: 0;
       left: 0;
       width: 100%;
       height: 100%;
-      background-color: rgba(0, 0, 0, 0.6); /* dark overlay */
-      backdrop-filter: blur(2px); /* add this line */
+      background-color: rgba(0, 0, 0, 0.75); /* makes text readable */
       z-index: -1;
     }
 
+    .neon-bg h2, .neon-bg p {
+      color: #fff;
+       text-shadow: 2px 2px 8px #000; /* gives words a black glow */
+    }
     body {
       margin: 0;
       font-family: 'Inter', sans-serif;
