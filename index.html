@@ -12,17 +12,17 @@
     .neon-bg p {
       color: #fff;
       text-shadow:
-      0 0 5px #ff3c3c,
-      0 0 10px #ff3c3c,
-      0 0 20px #ff3c3c,
-      0 0 40px #ff3c3c;
+        0 0 2px #000,   /* thin black outline */
+        0 0 4px #000,   /* thicker black glow */
+        2px 2px 8px #000; /* slight blur for contrast */
     }
     .neon-bg {
       position: relative;
       background-image: url('bnb-neon-sign.png'); /* make sure file name matches */
-      background-size: contain; /* changed from cover to contain */
+      background-size: cover; /* changed from cover to contain */
       background-repeat: no-repeat;
-      background-position: center;
+      background-position: center center;
+      background-attachment: scroll;
       max-height: 400px; /* limits stretch */
       padding: 4rem 1.5rem;
       z-index: 1;
