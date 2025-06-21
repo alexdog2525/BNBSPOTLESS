@@ -8,6 +8,27 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
   <style>
+      .neon-bg {
+      position: relative;
+      background-image: url('bnb-neon-sign.png'); /* change to your file name */
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      padding: 4rem 1.5rem;
+      z-index: 1;
+    }
+
+    .neon-bg::before {
+      content: "";
+       position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.6); /* dark overlay so text is readable */
+      z-index: -1;
+    }
+
     body {
       margin: 0;
       font-family: 'Inter', sans-serif;
@@ -98,7 +119,7 @@
     <a href="https://forms.gle/xDmwrKhjcUERQGnY7" target="_blank">📝 Online Quote Request</a>
   </div>
 
-  <section class="section">
+  <section class="section neon-bg">
     <h2>Why Choose Us?</h2>
     <p>At BnB Spotless, we specialize in Airbnb turnovers and residential deep cleans designed to leave your space spotless and guest-ready. Our experienced team uses pet-safe products and handles everything from detailed dusting and vacuuming to kitchen and bathroom sanitization.</p>
     <p>Whether you're a short-term rental host or just need a routine home clean, BnB Spotless delivers quality, consistency, and trust.</p>
