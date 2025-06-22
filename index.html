@@ -8,6 +8,72 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
   <style>
+    .cracked-title {
+  font-size: 3.2rem;
+  font-weight: 900;
+  color: red;
+  text-shadow:
+    0 0 10px red,
+    0 0 20px red,
+    0 0 30px red;
+  position: relative;
+  text-align: center;
+  margin: 1rem auto;
+}
+
+.tilted {
+  display: inline-block;
+  transform: rotate(-12deg);
+}
+
+.outline {
+  color: transparent;
+  -webkit-text-stroke: 1px black;
+  text-shadow: 0 0 6px red;
+}
+
+/* Cracked effect using background clip + glitch */
+.cracked {
+  position: relative;
+  display: inline-block;
+}
+
+.cracked::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 40%;
+  width: 100%;
+  height: 1px;
+  background: black;
+  transform: rotate(-20deg);
+  box-shadow: 0 0 3px black;
+}
+
+/* Smoke animation */
+.smoke::before {
+  content: '';
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  width: 8px;
+  height: 8px;
+  background: radial-gradient(circle, rgba(255,255,255,0.2) 0%, rgba(0,0,0,0) 80%);
+  border-radius: 50%;
+  animation: smokeRise 1.5s ease-in-out infinite;
+  opacity: 0.7;
+}
+
+@keyframes smokeRise {
+  0% {
+    transform: translate(-50%, 0) scale(1);
+    opacity: 0.7;
+  }
+  100% {
+    transform: translate(-50%, -30px) scale(1.4);
+    opacity: 0;
+  }
+}
     body {
       margin: 0;
       font-family: 'Inter', sans-serif;
@@ -160,8 +226,10 @@
 <body>
   <header>
     <img src="EAC2D567-5912-44F0-A1EA-AAF2E9F79AEE.PNG" alt="BnB Spotless Logo" />
-    <h1>BnB Spotless</h1>
-    <p>Short-Term Rental Turnovers & Home Cleaning</p>
+    <h1 class="cracked-title">
+  Bn<span class="tilted cracked smoke">B</span> <span class="outline">Spotless</span>
+  </h1>
+   <p>Short-Term Rental Turnovers & Home Cleaning</p>
   </header>
 
   <div class="buttons">
